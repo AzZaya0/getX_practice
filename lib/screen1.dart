@@ -26,7 +26,8 @@ class Screen1 extends StatelessWidget {
                   child: Column(children: [
                     ListTile(
                       leading: Icon(Icons.people),
-                    )
+                      title: Text('HELLO World'),
+                    ),
                   ]),
                 ));
               },

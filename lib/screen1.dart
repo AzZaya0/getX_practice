@@ -3,9 +3,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class Screen1 extends StatelessWidget {
+class Screen1 extends StatefulWidget {
   const Screen1({super.key});
 
+  @override
+  State<Screen1> createState() => _Screen1State();
+}
+
+class _Screen1State extends State<Screen1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,8 +30,22 @@ class Screen1 extends StatelessWidget {
                       borderRadius: BorderRadius.circular(30)),
                   child: Column(children: [
                     ListTile(
+                      onTap: () {
+                        print('darkmode');
+                        Get.changeTheme(
+                            ThemeData.dark()); //idk y but its not working
+                      },
                       leading: Icon(Icons.people),
                       title: Text('HELLO World'),
+                    ),
+                    ListTile(
+                      onTap: () {
+                        print('light');
+                        Get.changeTheme(ThemeData.light());
+                        setState(() {});
+                      },
+                      leading: Icon(Icons.people),
+                      title: Text('light'),
                     ),
                   ]),
                 ));

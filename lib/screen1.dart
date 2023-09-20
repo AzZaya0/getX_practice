@@ -50,7 +50,13 @@ class _Screen1State extends State<Screen1> {
                   ]),
                 ));
               },
-              child: Center(child: Text('show bottom sheet')))
+              child: Center(child: Text('show bottom sheet'))),
+          //device height using getX
+          Container(
+            height: Get.height * 0.2,
+            color: Colors.deepOrange,
+            child: Center(child: Text('the height is ${Get.height * 0.2}')),
+          )
         ],
       ),
     );

@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:get_x_app/widgets/myclipper.dart';
 
 class Screen1 extends StatefulWidget {
   const Screen1({super.key});
@@ -56,13 +57,16 @@ class _Screen1State extends State<Screen1> {
                 child: Text('show bottom sheet')),
           ),
 
-          //device height using getX
-          Container(
-            height: Get.height * 0.2,
-            width: Get.width,
-            color: Colors.deepOrange,
-            child: Center(child: Text('the height is ${Get.height * 0.2}')),
-          )
+          //now we use ClipPath
+          ClipPath(
+            clipper: myclipper(),
+            child: Container(
+              height: Get.height * 0.2,
+              width: Get.width * 0.8,
+              color: Colors.deepOrange,
+              child: Center(child: Text('hello')),
+            ),
+          ),
         ],
       ),
     );

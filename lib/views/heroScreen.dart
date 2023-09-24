@@ -1,18 +1,15 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get_x_app/views/heroScreen.dart';
 import 'package:get_x_app/widgets/myclipper.dart';
 
-class Screen1 extends StatefulWidget {
-  const Screen1({super.key});
+class HeroScreen extends StatefulWidget {
+  const HeroScreen({super.key});
 
   @override
-  State<Screen1> createState() => _Screen1State();
+  State<HeroScreen> createState() => _HeroScreenState();
 }
 
-class _Screen1State extends State<Screen1> {
+class _HeroScreenState extends State<HeroScreen> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -78,9 +75,9 @@ class _Screen1State extends State<Screen1> {
                         color: Colors.orange,
                       ),
                       alignment: Alignment.center,
-                      height: 200,
-                      width: 400,
-                      child: Text('hello'),
+                      height: 50,
+                      width: 200,
+                   
                     ),
                   ),
                 )

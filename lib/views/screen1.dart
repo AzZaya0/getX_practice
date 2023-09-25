@@ -63,7 +63,7 @@ class _Screen1State extends State<Screen1> {
                 Center(
                   child: ElevatedButton(
                       onPressed: () {
-                        Get.to(() => HeroScreen());
+                        Get.offAll(() => HeroScreen());
                       },
                       child: Text('heroScreen')),
                 ),
@@ -75,12 +75,11 @@ class _Screen1State extends State<Screen1> {
                     child: Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        color: Colors.orange,
+                        color: Get.theme.primaryColor,
                       ),
                       alignment: Alignment.center,
-                      height: 200,
-                      width: 400,
-                      child: Text('hello'),
+                      height: 100,
+                      width: 200,
                     ),
                   ),
                 )
@@ -89,9 +88,39 @@ class _Screen1State extends State<Screen1> {
             ClipPath(
               clipper: myclipper(),
               child: Container(
-                height: Get.height * 0.2,
+                height: Get.height * 0.25,
                 width: Get.width,
-                color: Colors.deepPurpleAccent,
+                color: Color(0xff6173F3),
+              ),
+            ),
+            ClipPath(
+              clipper: myclipper(),
+              child: Container(
+                height: Get.height * 0.27,
+                width: Get.width,
+                color: Color(0x556173F3),
+              ),
+            ),
+            Align(
+              alignment: Alignment(0, 1),
+              child: ClipPath(
+                clipper: myBottomclipper(),
+                child: Container(
+                  height: Get.height * 0.27,
+                  width: Get.width,
+                  color: Color(0x556173F3),
+                ),
+              ),
+            ),
+            Align(
+              alignment: Alignment(0, 1),
+              child: ClipPath(
+                clipper: myBottomclipper(),
+                child: Container(
+                  height: Get.height * 0.25,
+                  width: Get.width,
+                  color: Color(0xff6173F3),
+                ),
               ),
             ),
           ],

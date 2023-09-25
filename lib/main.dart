@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
-import 'package:get_x_app/views/home.dart';
 import 'package:get_x_app/views/screen1.dart';
 
 void main() {
@@ -16,7 +14,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       home: Screen1(),
-      themeMode: ThemeMode.system,
+      theme: ThemeData(primaryColor: Colors.orangeAccent),
+      darkTheme: ThemeData(primaryColor: Colors.white),
     );
   }
 }

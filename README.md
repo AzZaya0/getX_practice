@@ -1,16 +1,59 @@
-# get_x_app
+#
+<div align='center'>
 
-A new Flutter project.
+<h1>SocioApp</h1>
+<p>A Flutter application that interacts with the JSONPlaceholder API to display posts, comments, and perform various actions.</p>
 
-## Getting Started
+<h4> <span> · </span> <a href="https://github.com/AzZaya0/ yipl-android-list-me/blob/master/README.md"> Documentation </a> <span> · </span> <a href="https://github.com/AzZaya0/ yipl-android-list-me/issues"> Report Bug </a> <span> · </span> <a href="https://github.com/AzZaya0/ yipl-android-list-me/issues"> Request Feature </a> </h4>
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+</div>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# :notebook_with_decorative_cover: Table of Contents
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [About the Project](#star2-about-the-project)
+- [Contact](#handshake-contact)
+
+
+## :star2: About the Project
+
+### :dart: Features
+- View a list of posts.
+- View post details, including comments.
+- Add new comments to a post.
+- Show a list of users.
+- View a user's posts, albums with each photos, and todos.
+
+
+## :toolbox: Getting Started
+
+### :running: Run Locally
+
+Clone the project
+
+```bash
+https://bitbucket.org/azzaya/yipl-android-list-me/src/main/
+```
+Clone the Project
+```bash
+git clone https://azzaya-admin@bitbucket.org/azzaya/yipl-android-list-me.git
+```
+Navigate to the project directory:
+```bash
+cd yipl-android-list-me/intern_app
+```
+Install dependencies:
+```bash
+flutter pub get
+```
+Run App
+```bash
+flutter run
+```
+
+
+## :handshake: Contact
+
+Ajaya Timsina - - azzaya2060@gmil.com
+
+Project Link: [https://bitbucket.org/azzaya/yipl-android-list-me/src/main/](https://bitbucket.org/azzaya/yipl-android-list-me/src/main/)
